@@ -1,0 +1,534 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: 'Roboto Slab', serif;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: fixed;
+  padding: 20px 0;
+  background-color: #537ec5;
+  z-index: 2;
+}
+
+.menu {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.chisono {
+  margin-left: auto;
+}
+
+.contatti,
+.cosafaccio {
+  margin-left: 5%;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.section-presentation {
+  margin-left: auto;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #537ec5;
+}
+
+.background {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-top: 65px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  background-color: #537ec5;
+}
+
+.header {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f39422;
+  text-align: center;
+}
+
+.section-presentation {
+  width: 50%;
+  height: 500px;
+  display: inline-block;
+  position: relative;
+  top: 27px;
+  background-color: #010038;
+  padding: 2.5% 2.5%;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height:100%;
+  top:0;
+  left:0;
+  background:rgba(0,0,0,0.5);
+  opacity: 0;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  padding: 5% 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.overlay:hover {
+  opacity: 1;
+  transition: opacity .5s;
+}
+
+#hover-content {
+  display: none;
+}
+
+.section-presentation:hover #hover-content {
+    display: block;
+}
+
+.section-job {
+  width: 60%;
+  height: auto;
+  position: relative;
+  left: 40%;
+  background-color: #D6E9FE;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 5%;
+}
+
+.section-job > h2, h3 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+}
+
+.section-job h2, a {
+  margin-bottom: 5%;
+  text-decoration-line: none;
+}
+
+.section-job i {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+}
+
+.section-job h3 {
+  margin-bottom: 2.5%;
+}
+
+.section-job p {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 18px;
+}
+
+.section-education {
+  width: 60%;
+  height: auto;
+  position: relative;
+  top: -27px;
+  background-color: #293a80;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 5%;
+}
+
+.section-education > h2, h3 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+}
+
+.section-education h2 {
+  margin-bottom: 5%;
+}
+
+.section-education h3 {
+  margin-bottom: 2.5%;
+}
+
+.section-education p {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 18px;
+}
+
+.section-education i {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+}
+
+.section-education a {
+  text-decoration-line: none;
+}
+
+.blue-text {
+  color: #010038;
+}
+
+.blue-text b {
+  color: #010038;
+}
+
+.columns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.columns h3 {
+  font-size: 34px;
+  margin: 5%;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column-item {
+  width: 50%;
+  height: auto;
+  padding: 0.5%;
+}
+
+.column-item img {
+  width: 100%;
+  display: block;
+}
+
+.footer-container {
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: center;
+  background-color: #537ec5;
+  padding: 35px 0;
+}
+
+.footer {
+  width: 100%;
+  height: 135px;
+  /* background-color: #f39422; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+hr {
+  margin: 0 auto;
+  width: 250px;
+  border: 0;
+  height: 2px;
+  background: #fff;
+}
+
+.social {
+  margin: 20px auto;
+  width: 140px;
+  text-align: center;
+}
+
+.icon {
+	position: relative;
+	text-align: center;
+	width: 0px;
+	height: 0px;
+	padding: 20px;
+	border-top-right-radius:20px;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	-moz-border-radius: 20px 20px 20px 20px;
+	-webkit-border-radius: 20px 20px 20px 20px;
+	-khtml-border-radius: 20px 20px 20px 20px;
+	color: #fff;
+}
+
+.icon i {
+	font-size: 20px;
+	position: absolute;
+	left: 9px;
+	top: 10px;
+}
+
+.icon.social {
+	float: left;
+	margin: 0 5px 0 0;
+	cursor: pointer;
+	background: #f39422;
+	color: #262626;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+}
+
+.icon.social:hover {
+	background: #537ec5;
+	color: #537ec5;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+}
+
+.icon.social.fb i {
+	left: 13px;
+	top: 10px;
+}
+
+.icon.social.ig i {
+	left: 11px;
+}
+
+.icon.social.in i {
+	left: 11px;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  body {
+    font-size: 16px;
+  }
+  .background {
+    width: 100%;
+  }
+  .content {
+    width: 100%;
+  }
+  .section-presentation {
+    width: 100%;
+    top: 0;
+  }
+  .overlay {
+    opacity: 1;
+    padding: 10% 10%;
+    font-size: 21px;
+  }
+  #hover-content {
+    display: block;
+  }
+  .section-job {
+    width: 100%;
+    height: auto;
+    position: static;
+    left: 0;
+    padding: 8% 0%;
+  }
+  .section-education  {
+    width: 100%;
+    height: auto;
+    top: 0;
+    padding: 8% 0%;
+  }
+  /* .columns {
+    padding: 8% 8%;
+  }
+  .projects {
+    flex-direction: column;
+  }
+  .column-item {
+    width: 100%;
+    margin-top: 10%;
+  } */
+  .columns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .columns h3 {
+    font-size: 24px;
+    margin: 5%;
+  }
+  .column-item {
+    width: 50%;
+    height: auto;
+    float: right;
+    /* padding: 5px 5px; */
+  }
+  .column-item img {
+    width: 100%;
+    display: block;
+  }
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15% 10%;
+  }
+  .footer-item {
+    text-align: center;
+    height: auto;
+  }
+  .footer-two {
+    margin-top: 5%;
+  }
+  .section-social {
+    margin: 0 auto;
+  }
+  .logo {
+    display: none;
+  }
+  .menu-container {
+    padding: 30px 0;
+  }
+  .menu {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .chisono,
+  .contatti,
+  .cosafaccio {
+    margin: 0 auto;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  body {
+    font-size: 16px;
+  }
+  .background {
+    width: 90%;
+  }
+  .content {
+    width: 100%;
+  }
+  .section-presentation {
+    width: 100%;
+    top: 0;
+    margin-top: 2.5%;
+  }
+  .overlay {
+    opacity: 1;
+    padding: 10% 10%;
+    font-size: 21px;
+  }
+  #hover-content {
+    display: block;
+  }
+  .section-job {
+    width: 100%;
+    height: auto;
+    left: 0;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    margin-top: 2.5%;
+  }
+  .section-education  {
+    width: 100%;
+    height: auto;
+    margin-top: 6.5%;
+  }
+  /* .columns {
+    margin: 0 auto;
+  }
+  .columns h3 {
+    margin-top: 2.5%;
+  }
+  .projects {
+    flex-direction: row;
+  }
+  .column-item {
+    width: 50%;
+  } */
+  .columns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .columns h3 {
+    font-size: 24px;
+    margin-bottom: 2.5%;
+  }
+  .column-item {
+    width: 50%;
+    height: auto;
+    float: left;
+    padding: 5px 5px;
+  }
+  .column-item img {
+    width: 100%;
+    display: block;
+  }
+  .footer-container {
+    padding: 0px 0px;
+    margin: 0px 0px;
+  }
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 35px 0px;
+  }
+  .footer-item {
+    text-align: center;
+    height: auto;
+    margin: 10px 0px;
+  }
+  .footer-two {
+    margin-top: 5%;
+  }
+  .section-social {
+    margin: 0 auto;
+  }
+  .social {
+    margin: 14px auto;
+  }
+  .logo {
+    display: none;
+  }
+  .menu-container {
+    padding: 30px 0;
+  }
+  .menu {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .chisono,
+  .contatti,
+  .cosafaccio {
+    margin: 0 auto;
+  }
+}
